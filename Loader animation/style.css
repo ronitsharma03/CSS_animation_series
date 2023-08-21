@@ -1,0 +1,23 @@
+body{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+}
+.loader{
+    height: 70px;
+    width: 70px;
+    border-top: 3px solid red;
+    border-left: 3px solid red;
+    justify-content: center;
+    margin: auto;
+    border-radius: 50%;
+    animation: spin 0.5s linear infinite;
+}
+
+@keyframes spin {
+    100% {
+        transform: rotate(360deg);
+    }
+}
